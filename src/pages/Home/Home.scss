@@ -1,0 +1,329 @@
+.home-page-cont {
+    background-color: #141414;
+    min-height: 100vh;
+
+
+    .home-header {
+        padding: 0.8rem 2rem;
+
+        .logo {
+            width: 5.5rem;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: flex-end;
+
+        .gallery-sec {
+
+            .gallery-1 {
+                top: 38%;
+                left: 10%;
+
+                @media only screen and (max-width: 900px) {
+                    left: 5%;
+                  }
+
+                  @media only screen and (max-width: 818px) {
+                   top:25%;
+                  
+              }
+
+              @media only screen and (max-width: 738px) {
+                left: 20%;
+              }
+
+              @media only screen and (max-width: 578px) {
+                left: 10%;
+              }
+
+       
+
+                .gallery-img-cont {
+                    width: 11rem;
+
+                    .gallery-img-sec {
+                        height: 15rem;
+
+                        .gallery1-img {
+                            background: url(../../images/gallery2.jpg) rgba(4, 127, 131, 0.37);
+                            background-blend-mode: multiply;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+
+            .gallery-2 {
+                top: 3%;
+                left: 40%;
+
+                @media only screen and (max-width: 818px) {
+                    display: none !important;
+                  }
+
+                .gallery-img-cont {
+                    width: 13rem;
+
+                    .gallery-img-sec {
+                        height: 17rem;
+
+                        .gallery1-img {
+                            background: url(../../images/gallery1.jpg) rgba(150, 105, 9, 0.37);
+                            background-blend-mode: multiply;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+
+            .gallery-3 {
+                left: 49%;
+                bottom: 30px;
+
+                @media only screen and (max-width: 1250px) {
+                    left: 45%;
+                  }
+
+                  @media only screen and (max-width: 818px) {
+                    bottom: 30px;
+                    left: 30%;
+                  }
+
+                  @media only screen and (max-width: 738px) {
+                    left: 20%;
+                  }
+
+                  @media only screen and (max-width: 578px) {
+                    left: 10%;
+                  }
+
+
+                .gallery-img-cont {
+                    width: 18rem;
+
+                    .gallery-img-sec {
+                        height: 10rem;
+
+                        .gallery1-img {
+                            background: url(../../images/gallery3.jpg) rgba(63, 9, 150, 0.37);
+                            background-blend-mode: multiply;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+            .gallery {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: absolute;
+
+                
+
+                .gallery-img-cont {
+                    z-index: 2;
+
+                    .gallery-img-sec {
+                        width: 100%;
+                        overflow: hidden;
+    
+                        .gallery1-img {
+                         
+                            width: 100%;
+                            height: 100%;
+                            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                            transition: all 0.5s ease;
+        
+                            &:hover {
+                                transform: scale(1.1);
+                                
+                            }
+        
+                    }
+    
+                    
+                   
+                   
+                    }
+
+                    .img-caption {
+                        color: #fff;
+                        opacity: 0.8;
+                        font-family: 'Shapiro-45-wide';
+                        width: 100%;
+                        font-size: 0.9rem;
+                        padding: 0.2rem 0rem;
+                        font-weight: 300;
+                    }
+
+                }
+
+               
+
+                .info {
+                    margin-top: -1.2rem;
+                    margin-left: -2.5rem;
+                    z-index: 10;
+                    .year {
+                        color: #FDF800;
+                        font-family: "Shapiro-95-air";
+                        font-weight: bold;
+                        border-bottom: 1px solid #fff;
+                    }
+
+                    .name {
+                        font-family: "Shapiro-45-wide";
+                        font-weight: bold;
+                        color: #fff;
+                        width: 3rem;
+                        font-size: 2.3rem;
+                        text-shadow: 0px 0px 10px rgba(17, 12, 46, 0.15);
+                        padding-top: 0.7rem;
+                    }
+                }
+            }
+        }
+
+        .details-cont {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .access-sec {
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 47%;
+                right: 0;
+
+                @media only screen and (max-width: 738px) {
+                    top:7%
+                  }
+
+                .menu-title {
+                    font-family: Shapiro-45-ext;
+                    color: #fff;
+                    margin: 0;
+
+                    @media only screen and (max-width: 554px) {
+                        display: none;
+                      }
+                }
+
+                .menu {
+                    display: flex;
+                    flex-direction: column;
+                    width: 85px;
+                    margin: 0rem 1rem;
+                    
+
+                    &:hover {
+                        .line-1 {
+                            width: 65px;
+                        }
+
+                        .line-2 {
+                            width: 85px;
+                        }
+
+                        .line-3 {
+                            width: 50px;
+                        }
+                    }
+
+                    .line-1 {
+                        width: 85px;
+                        background-color: #FDF800;
+                        height: 2px;
+                        margin: 0.3rem 0rem;
+                        transition: all 0.2s ease-in;
+                    }
+
+                    .line-2 {
+                        width: 50px;
+                        background-color: #FDF800;
+                        height: 2px;
+                        transition: all 0.2s ease-in;
+                    }
+
+                    .line-3 {
+                        width: 70px;
+                        background-color: #FDF800;
+                        height: 2px;
+                        margin: 0.3rem 0rem;
+                        transition: all 0.2s ease-in;
+                    }
+                }
+            }
+
+            .time-sec {
+                margin: 0rem 0.2rem;
+                position: absolute;
+                bottom: 2px;
+                right: 2;
+
+                @media only screen and (max-width: 1100px) {
+                    display: none;
+                  }
+
+                .time {
+                    font-family: Shapiro-55-ext;
+                    color: #FDF800;
+                    text-align: right;
+
+                    .blink {
+                     animation: blink-animation  1s linear infinite;
+                    }
+                }
+
+                .date {
+                    font-family: Shapiro-55-ext;
+                    color: #FDF800;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// .home-page-cont {
+//     background-color: #141414;
+//     height: 100vh;
+
+//     .wrapper {
+//         display: flex;
+//         align-items: center;
+//         height: 100%;
+//         justify-content: center;
+
+//         .logo-cont {
+//             width: 65%;
+//             display: flex;
+//             justify-content: center;
+//             .logo {
+//                 width: 35rem;
+//             }
+//         }
+
+
+    // }
+// }
+
+@keyframes blink-animation {
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+  }
+
+
