@@ -93,7 +93,7 @@ const Home = () => {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                    }}  className="gallery gallery-2">
+                    }}  onMouseEnter={playClick} className="gallery gallery-2">
                         <div className="gallery-img-cont">
                             <motion.div variants={image} initial="hidden" animate="visible" transition={{ duration: 0.7 }} className="gallery-img-sec">
                                 <div className="gallery1-img" />
@@ -113,7 +113,7 @@ const Home = () => {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                    }}  className="gallery gallery-3">
+                    }}  onMouseEnter={playClick} className="gallery gallery-3">
                         <div className="gallery-img-cont">
                             <motion.div variants={image} initial="hidden" animate="visible" transition={{ duration: 0.7 }} className="gallery-img-sec">
                                 <div className="gallery1-img" />

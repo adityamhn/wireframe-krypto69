@@ -1,0 +1,9 @@
+.userlist-main-div{
+    border-left:2px solid white;
+    border-right:2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    overflow-y: scroll;
+    height:85vh;
+}
