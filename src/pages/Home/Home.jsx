@@ -4,10 +4,13 @@ import './Home.scss'
 import logo from '../../images/logo.svg'
 import { motion } from "framer-motion"
 import click_basic from '../../audio/click_basic.wav'
+import { useNavigate } from 'react-router'
 
 
 
 const Home = () => {
+    const navigate = useNavigate()
+
     const [date, setDate] = useState(new Date());
 
     useEffect(() => {
@@ -53,9 +56,15 @@ const Home = () => {
         }
     }
 
-    const playClick =() => {
+    const playClick = () => {
         const audio = document.getElementById('click-audio')
         audio.play()
+    }
+
+    const stopClick = () => {
+        const audio = document.getElementById('click-audio')
+        audio.pause()
+        audio.currentTime = 0;
     }
 
 
@@ -71,7 +80,7 @@ const Home = () => {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                    }} onMouseEnter={playClick} className="gallery gallery-1">
+                    }} onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-1">
 
                         <div className="gallery-img-cont">
 
@@ -93,7 +102,7 @@ const Home = () => {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                    }}  onMouseEnter={playClick} className="gallery gallery-2">
+                    }} onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-2">
                         <div className="gallery-img-cont">
                             <motion.div variants={image} initial="hidden" animate="visible" transition={{ duration: 0.7 }} className="gallery-img-sec">
                                 <div className="gallery1-img" />
@@ -113,7 +122,7 @@ const Home = () => {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                    }}  onMouseEnter={playClick} className="gallery gallery-3">
+                    }} onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-3">
                         <div className="gallery-img-cont">
                             <motion.div variants={image} initial="hidden" animate="visible" transition={{ duration: 0.7 }} className="gallery-img-sec">
                                 <div className="gallery1-img" />
@@ -133,7 +142,7 @@ const Home = () => {
                 <div className="details-cont">
                     <div className="access-sec">
                         <h5 className="menu-title">ACCESS PORTAL</h5>
-                        <div className="menu">
+                        <div className="menu" onMouseEnter={playClick} onMouseLeave={stopClick} onClick={() => navigate('/menu', { replace: true })}>
                             <div className="line-1" />
                             <div className="line-2" />
                             <div className="line-3" />
@@ -146,7 +155,7 @@ const Home = () => {
 
                 </div>
             </div>
-            <audio  id="click-audio">
+            <audio preload="auto" id="click-audio">
                 <source src={click_basic}></source>
             </audio>
         </Container>
@@ -157,25 +166,3 @@ export default Home
 
 
 
-{/* <Container fluid className="home-page-cont">
-            <div className="wrapper">
-                <div className="logo-cont">
-                    <Image src={logo} className="logo" />
-                </div>
-                <div className="details-cont">
-                    <div className="access-sec">
-                        <h5 className="menu-title">ACCESS PORTAL</h5>
-                        <div className="menu">
-                            <div className="line-1" />
-                            <div className="line-2" />
-                            <div className="line-3" />
-                        </div>
-                    </div>
-                    <div className="time-sec">
-                        <h5 className="time">{date.getHours()}<span className="blink">:</span>{date.getMinutes()} HRS</h5>
-                        <h6 className="date">{date.toDateString()}</h6>
-                    </div>
-             
-                </div>
-            </div>
-        </Container> */}

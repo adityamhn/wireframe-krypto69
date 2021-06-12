@@ -1,32 +1,41 @@
 @font-face {
-  font-family: 'Shapiro-45-ext';
-  src: local('Shapiro-45-ext'), url('./fonts/Shapiro\ 45\ Welter\ Extd.ttf') ;
+  font-family: "Shapiro-45-ext";
+  src: local("Shapiro-45-ext"), url("./fonts/Shapiro\ 45\ Welter\ Extd.ttf");
 }
 
 @font-face {
-  font-family: 'Shapiro-55-ext';
-  src: local('Shapiro-55-ext'), url('./fonts/Shapiro\ 55\ Middle\ Extd.ttf') ;
+  font-family: "Shapiro-55-ext";
+  src: local("Shapiro-55-ext"), url("./fonts/Shapiro\ 55\ Middle\ Extd.ttf");
 }
 
 @font-face {
-  font-family: 'Shapiro-45-wide';
-  src: local('Shapiro-45-wide'), url('./fonts/Shapiro\ 45\ Welter\ Wide.ttf') ;
+  font-family: "Shapiro-45-wide";
+  src: local("Shapiro-45-wide"), url("./fonts/Shapiro\ 45\ Welter\ Wide.ttf");
 }
 
 @font-face {
-  font-family: 'Shapiro-35';
-  src: local('Shapiro-35'), url('./fonts//Shapiro\ 35\ Feather\ Text.ttf') ;
+  font-family: "Shapiro-35";
+  src: local("Shapiro-35"), url("./fonts//Shapiro\ 35\ Feather\ Text.ttf");
 }
 
 @font-face {
-  font-family: 'Shapiro-45';
-  src: local('Shapiro-45'), url('./fonts/Shapiro\ 45\ Welter.ttf') ;
+  font-family: "Shapiro-45";
+  src: local("Shapiro-45"), url("./fonts/Shapiro\ 45\ Welter.ttf");
 }
 
+@font-face {
+  font-family: "Shapiro-95-air";
+  src: local("Shapiro-95-air"), url("./fonts/Shapiro\ 97\ Air\ Extd.ttf");
+}
 
 @font-face {
-  font-family: 'Shapiro-95-air';
-  src: local('Shapiro-95-air'), url('./fonts/Shapiro\ 97\ Air\ Extd.ttf') ;
+  font-family: "Shapiro-115-ext";
+  src: local("Shapiro-115-ext"), url("./fonts/Shapiro\ 115\ Plus\ Extd.ttf");
+}
+
+@font-face {
+  font-family: "Shapiro-116-inc";
+  src: local("Shapiro-116-inc"), url("./fonts/Shapiro\ 116\ Inclined\ Extd.ttf");
 }
 
 * {

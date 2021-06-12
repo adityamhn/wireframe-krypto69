@@ -1,67 +1,50 @@
-.users-page-main-div{
+.social-users-cont {
     background-color: #141414;
-    width:100vw;
-    min-height:100vh;
-    display:flex;
-    flex-direction: row;
-    .first-column{
-        flex:0.17;
-        background-color: #141414;
-        height:100vh;
-        display:flex;
-        flex-direction:column;
-        .back-button-area{
-            flex:0.15;
-            display:flex;
-    
-            justify-content: center;
-            align-items: center;
-            .main-text{
-                font-family: "Shapiro-55-ext";
-                font-weight: bold;
-                font-size:0.9rem;
-                color:white;
+    min-height: 100vh;
+    padding: 0;
+
+    .users-header {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 2rem;
+
+        .back-cont {
+            .back {
+                color: #fff;
                 text-decoration: underline;
-                text-transform: uppercase;
-            }
-        }
-        .logo-area{
-            flex:0.85;
-            display:flex;
-            justify-content: center;
-            align-items: flex-end;
-            
-            .main-image{
-                transform:scale(0.6);
-            }
-        }
-    }
-    .second-column{
-        flex:0.66;
-        height:100vh;
-        display:flex;
-        flex-direction:column;
+                font-family: "Shapiro-55-ext";
+                transition: all 1s ease;
 
-        .search-bar-area{
-            flex:0.15;
-            width:100%;
-            
-            display:flex;
-            justify-content: flex-end;
-            align-items:center;
-            .search-bar{
-                margin-right:3rem;
-                width:25rem;
+                &:hover {
+                    text-decoration: line-through;
+                }
+            }
+
+        }
+
+        
+        .search-cont {
+            .search-field {
+                height: 2rem;
+                border: none;
+                font-family: 'Shapiro-45-ext';
+                width: 25rem;
+                border-radius: 6px;
+
+                @media only screen and (max-width: 600px) {
+                    width: 16rem;
+                 }
+
+                 @media only screen and (max-width: 421px) {
+                    width: 10rem;
+                 }
             }
         }
-        .userdata-area{
-            flex:0.85;
-        }
     }
-    .third-column{
-        flex:0.17;
-      
-        height:100vh;
 
-    }
+
+
 }

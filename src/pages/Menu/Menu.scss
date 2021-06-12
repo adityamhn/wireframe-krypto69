@@ -1,0 +1,132 @@
+.menu-cont {
+    background-color: #141414;
+    min-height: 100vh;
+    padding: 0;
+
+    .menu-header {
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0rem 2rem;
+
+        .close-sec {
+            color: #fff;
+            text-decoration: underline;
+            font-family: "Shapiro-55-ext";
+            transition: all 1s ease;
+
+            &:hover {
+                text-decoration: line-through;
+            }
+        }
+    }
+    .menu-title-sec {
+        width: 3rem;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        .menu-title {
+            color: #fdf800;
+            font-size: 3.3rem;
+            font-family: "Shapiro-116-inc";
+            text-shadow: 0px 0px 10px rgba(17, 12, 46, 0.15);
+
+            @media only screen and (max-width: 772px) {
+               font-size: 2.5rem;
+            }
+
+            @media only screen and (max-width: 631px) {
+                font-size: 2rem;
+             }
+
+            .menu-title-letter {
+                width: fit-content;
+                overflow: hidden;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            display: none;
+                 }
+
+       
+
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 20%;
+        top: 50%;
+        transform: translateY(-60%);
+
+        @media only screen and (max-width: 500px) {
+            right: 50%;
+            transform: translate(50%,-60%);
+                 }
+
+        .item {
+            padding: 1.2rem 0rem;
+            width: 9rem;
+            .item-name {
+                color: #fff;
+                font-family: "Shapiro-45-ext";
+
+                &:hover {
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+
+    .side-text {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fdf800;
+        width: 6px;
+        overflow-wrap: break-word;
+        text-align: center;
+        font-size: 0.6rem;
+        font-family: "Shapiro-35";
+        line-height: 2.2rem;
+    }
+
+    .menu-footer {
+        .logo-sec {
+            position: absolute;
+            bottom: 2%;
+            left: 12px;
+            .logo {
+                width: 6rem;
+
+                @media only screen and (max-width: 500px) {
+                   width: 4rem;
+                         }
+            }
+        }
+
+        .text-sec {
+            position: absolute;
+            bottom: 2%;
+            right: 12px;
+            .acc-text {
+                color: #d8d8d8;
+                font-family: "Shapiro-45-ext";
+                width: 12rem;
+                font-size: 0.8rem;
+
+                @media only screen and (max-width: 500px) {
+                    font-size: 0.5rem;
+                    text-align: right;
+                    width: 8rem;
+                          }
+            }
+        }
+    }
+}
+
+
