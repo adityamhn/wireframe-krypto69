@@ -75,65 +75,50 @@ const Home = () => {
             </div>
             <div className="wrapper">
                 <div className="gallery-sec">
-                    <motion.div drag dragConstraints={{
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                    }} onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-1">
+                    <motion.div   onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-1">
 
                         <div className="gallery-img-cont">
 
                             <motion.div variants={image} initial="hidden" animate="visible" transition={{ duration: 0.7 }} className="gallery-img-sec">
                                 <div className="gallery1-img" />
                             </motion.div>
-                            <motion.div variants={text} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.7 }} className="img-caption">We got a fucking great victory.</motion.div>
+                            <motion.div variants={text} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.7 }} className="img-caption">Arresting The Godfather (John Gotti)</motion.div>
 
                         </div>
 
                         <div className="info">
-                            <motion.h5 variants={letter} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.4 }} className="year">1986</motion.h5>
-                            <motion.h4 variants={letter} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.4 }} className="name">SUPER MISSION</motion.h4>
+                            <motion.h5 variants={letter} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.4 }} className="year">1989</motion.h5>
+                            <motion.h4 variants={letter} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.4 }} className="name">CATCHING JOHNNY</motion.h4>
                         </div>
                     </motion.div>
 
-                    <motion.div drag dragConstraints={{
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                    }} onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-2">
+                    <motion.div   onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-2">
                         <div className="gallery-img-cont">
                             <motion.div variants={image} initial="hidden" animate="visible" transition={{ duration: 0.7 }} className="gallery-img-sec">
                                 <div className="gallery1-img" />
                             </motion.div>
-                            <motion.div variants={text} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.7 }} className="img-caption">We got a fucking great victory.</motion.div>
+                            <motion.div variants={text} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.7 }} className="img-caption">The Mission To Capture The Devil.</motion.div>
 
                         </div>
 
                         <div className="info">
-                            <motion.h5 variants={letter} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.4 }} className="year">1986</motion.h5>
-                            <motion.h4 variants={letter} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.4 }} className="name">SUPER MISSION</motion.h4>
+                            <motion.h5 variants={letter} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.4 }} className="year">2003</motion.h5>
+                            <motion.h4 variants={letter} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.4 }} className="name">RED DAWN</motion.h4>
                         </div>
                     </motion.div>
 
-                    <motion.div drag dragConstraints={{
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                    }} onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-3">
+                    <motion.div   onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-3">
                         <div className="gallery-img-cont">
                             <motion.div variants={image} initial="hidden" animate="visible" transition={{ duration: 0.7 }} className="gallery-img-sec">
                                 <div className="gallery1-img" />
                             </motion.div>
-                            <motion.div variants={text} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.7 }} className="img-caption">We got a fucking great victory.</motion.div>
+                            <motion.div variants={text} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.7 }} className="img-caption">Longest Pursuit In US History (LA).</motion.div>
 
                         </div>
 
                         <div className="info">
-                            <motion.h5 variants={letter} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.4 }} className="year">1986</motion.h5>
-                            <motion.h4 variants={letter} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.4 }} className="name">SUPER MISSION</motion.h4>
+                            <motion.h5 variants={letter} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.4 }} className="year">2021</motion.h5>
+                            <motion.h4 variants={letter} initial="hidden" animate="visible" transition={{ duration: 1, delay: 0.4 }} className="name">HOT PURSUIT</motion.h4>
                         </div>
                     </motion.div>
 

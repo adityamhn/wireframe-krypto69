@@ -81,8 +81,26 @@
                         @media only screen and (max-width: 542px) {
                             font-size: 0.7rem;
                         }
+                        @media screen  and (max-width:450px){
+                            font-size: 0.6rem;
+                        }
+                        
+                        @media screen  and (max-width:350px){
+                            font-size: 0.5rem;
+                        }
+                        @media screen  and (max-width:350px){
+                            font-size: 0.4rem;
+                        }
+
+                    }
+                    @media screen and (max-width:300px) {
+                  
+                        padding: 0rem 1.2rem;
+                    
                     }
                 }
+
+                
             }
         }
     }
@@ -146,5 +164,6 @@
         .email {
             color: #fff;
         }
+   
     }
 }
