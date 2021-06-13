@@ -11,7 +11,6 @@
             @media only screen and (max-width: 523px) {
                 width: 4rem;
             }
-
         }
 
         @media only screen and (max-width: 523px) {
@@ -45,12 +44,10 @@
                 }
 
                 @media only screen and (max-width: 523px) {
-                    top:50%;
+                    top: 50%;
                     left: 50%;
-                    transform: translate(-80%,-40%);
+                    transform: translate(-80%, -40%);
                 }
-
-              
 
                 .gallery-img-cont {
                     width: 11rem;
@@ -308,8 +305,6 @@
         }
     }
 }
-
-
 
 @keyframes blink-animation {
     0% {

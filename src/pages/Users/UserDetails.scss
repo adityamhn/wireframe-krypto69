@@ -1,0 +1,97 @@
+.user-details-page-cont {
+    background-color: #141414;
+    min-height: 100vh;
+    padding: 0;
+
+    .posts-header {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 2rem;
+
+        @media only screen and (max-width: 500px) {
+            padding: 0rem 0.5rem;
+        }
+
+        .back-cont {
+            .back {
+                color: #fff;
+                text-decoration: underline;
+                font-family: "Shapiro-55-ext";
+                transition: all 1s ease;
+
+                &:hover {
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+
+    .wrapper {
+        .heading {
+            padding: 0rem 2rem;
+
+            @media only screen and (max-width: 500px) {
+                padding: 1rem 0.5rem;
+            }
+            .title {
+                font-family: "Shapiro-55-ext";
+                font-size: 3rem;
+                color: #fdf800;
+
+                @media only screen and (max-width: 800px) {
+                    font-size: 3rem;
+                }
+
+                @media only screen and (max-width: 600px) {
+                    font-size: 2.5rem;
+                }
+
+                @media only screen and (max-width: 400px) {
+                    font-size: 2rem;
+                }
+            }
+        }
+        .user-show-sec {
+            padding: 0rem 2rem;
+
+            @media only screen and (max-width: 500px) {
+                padding: 1rem 0.5rem 0rem 1rem;
+            }
+            font-family: "Shapiro-45-ext";
+            line-height: 200%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: flex-end;
+
+            @media only screen and (max-width: 763px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .show-pic {
+                width: 13rem;
+                height: 13rem;
+
+                @media only screen and (max-width: 403px) {
+                    width: 11rem;
+                    height: 11rem;
+                }
+            }
+
+            .main {
+                padding: 2rem 4rem 2rem 0rem;
+
+                @media only screen and (max-width: 403px) {
+                    font-size: 0.8rem;
+                }
+                .email {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -64,12 +64,17 @@ const Users = () => {
     }
     return (
         <Container fluid className="social-users-cont">
-            <div className="users-header">
+            <div className="posts-header">
                 <div className="back-cont">
-                    <div className="back" onMouseEnter={playClick} onMouseLeave={stopClick} onClick={() => navigate('/menu', { replace: true })}>BACK</div>
+                    <div className="back" onMouseEnter={playClick} onMouseLeave={stopClick} onClick={() => navigate(-1)}>BACK</div>
                 </div>
                 <div className="search-cont">
-                    <FormControl onClick={playClick} className="search-field" placeholder='SEARCH' onChange={(e) => setSearchfield(e.target.value)} />
+                    <FormControl className="search-field" placeholder='SEARCH' onChange={(e) => setSearchfield(e.target.value)} />
+                </div>
+            </div>
+            <div className="wrapper-header">
+                <div className="header-col">
+                    <h3 className="title">SOCIAL MEDIA USERS</h3>
                 </div>
             </div>
             <div className="wrapper">

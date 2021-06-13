@@ -142,7 +142,7 @@ const Home = () => {
                 <div className="details-cont">
                     <div className="access-sec">
                         <h5 className="menu-title">ACCESS PORTAL</h5>
-                        <div className="menu" onMouseEnter={playClick} onMouseLeave={stopClick} onClick={() => navigate('/menu', { replace: true })}>
+                        <div className="menu" onMouseEnter={playClick} onMouseLeave={stopClick} onClick={() => navigate('/menu')}>
                             <div className="line-1" />
                             <div className="line-2" />
                             <div className="line-3" />

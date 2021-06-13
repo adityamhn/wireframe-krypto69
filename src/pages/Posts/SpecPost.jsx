@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Container,Image } from 'react-bootstrap'
+import { Container, Image } from 'react-bootstrap'
 import './SpecPost.scss'
 import { useNavigate, useParams } from 'react-router'
 import click_basic from '../../audio/click_basic.wav'
@@ -9,9 +9,9 @@ import Loader from '../../components/Loader'
 
 
 const SpecPost = () => {
-    const {postid} = useParams()
+    const { postid } = useParams()
     const navigate = useNavigate()
-    const [post,setPost] = useState([])
+    const [post, setPost] = useState([])
     const [loading, setLoading] = useState(true)
 
 
@@ -42,41 +42,44 @@ const SpecPost = () => {
 
     if (loading) {
         return (
-            <Loader/>
+            <Loader />
         )
     }
 
+
     return (
         <Container fluid className="spec-post-cont">
-             <div className="posts-header">
+            <div className="posts-header">
                 <div className="back-cont">
-                    <div className="back" onMouseEnter={playClick} onMouseLeave={stopClick} onClick={() => navigate('/posts', { replace: true })}>BACK</div>
+                    <div className="back" onMouseEnter={playClick} onMouseLeave={stopClick} onClick={() => navigate(-1)}>BACK</div>
                 </div>
             </div>
-            <div className="wrapper">
-           <h3 className="title">SOCIAL MEDIA POST DETAILS</h3>
+            <div className='wrapper'>
+                <div className="heading">
+                    <h3 className="title">SOCIAL MEDIA POSTS</h3>
+                </div>
 
                 <div className="body">
-                <div className="post-img">
-                                <Image src={post.image} className="image" />
-                            </div>
-                            <div className="post-info">
-                            <div className="text"><span className="text-title">PUBLISHED BY : </span><span className="name" >{post.owner.firstName + " " + post.owner.lastName}</span></div>
-                                <div className="text"><span className="text-title">TEXT :</span>  {post.text}</div>
-                                <div className="text"><span className="text-title">LIKES :</span> {post.likes}</div>
-                                <div className="text"><span className="text-title">LINK :</span> <a href={post.link} target="_blank" className="link" > {post.link}</a></div>
-                                <div className="text"><span className="text-title">TAGS :</span> {post.tags.map((tag,index) => <span key={index}>{tag} , </span>)} </div>
-                                <div className="text"><span className="text-title">PUBLISHED ON : </span>{new Date(post.publishDate).toLocaleTimeString()} , {new Date(post.publishDate).toDateString()} </div>
+                    <div className="post-img">
+                        <Image src={post.image} className="image" />
+                    </div>
+                    <div className="post-info">
+                        <div className="text"><span className="text-title">PUBLISHED BY : </span><span className="name" onClick={() => navigate(`/users/${post.owner._id}`)} >{post.owner.firstName + " " + post.owner.lastName}</span></div>
+                        <div className="text"><span className="text-title">TEXT :</span>  {post.text}</div>
+                        <div className="text"><span className="text-title">LIKES :</span> {post.likes}</div>
+                        <div className="text"><span className="text-title">LINK :</span> <a href={post.link} target="_blank" className="link" > {post.link}</a></div>
+                        <div className="text"><span className="text-title">TAGS :</span> {post.tags.map((tag, index) => <span key={index}>{tag} , </span>)} </div>
+                        <div className="text"><span className="text-title">PUBLISHED ON : </span>{new Date(post.publishDate).toLocaleTimeString()} , {new Date(post.publishDate).toDateString()} </div>
 
- 
 
-                            </div>
+
+                    </div>
                 </div>
             </div>
             <audio preload="auto" id="click-audio">
                 <source src={click_basic}></source>
             </audio>
-          
+
         </Container>
     )
 }

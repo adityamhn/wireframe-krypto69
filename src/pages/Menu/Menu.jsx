@@ -12,7 +12,7 @@ const Menu = () => {
     const navigate = useNavigate()
 
 
-    const letter = {
+    const lists = {
         hidden: {
             opacity: 0,
             x: -50
@@ -27,7 +27,18 @@ const Menu = () => {
     }
 
 
-    const menuTitle = 'U.S. SECRET TASK FORCE'
+    const text = {
+        hidden: {
+            x: -50
+        },
+        transition: {
+            staggerChildren: 0.1,
+        }
+    }
+
+
+
+
 
     const playClick = () => {
         const audio = document.getElementById('click-audio')
@@ -45,25 +56,23 @@ const Menu = () => {
     return (
         <Container fluid className="menu-cont">
             <div className="menu-header">
-                <div className="close-sec" onMouseEnter={playClick} onMouseLeave={stopClick} onClick={() => navigate('/', { replace: true })}>CLOSE</div>
+                <div className="close-sec" onMouseEnter={playClick} onMouseLeave={stopClick} onClick={() => navigate('/')}>CLOSE</div>
             </div>
             <div className="menu-title-sec">
-                <div className="menu-title">
-                    {menuTitle.split("").map((word, index) => (
-                        <motion.span variants={letter} initial="hidden" animate="visible" transition={{ duration: 0.3, delay: index*0.09 }} className="menu-title-letter" key={index}>{word}</motion.span>
-                    ))}
-                </div>
+                <motion.div className="menu-title">
+                    U.S. SECRET TASK FORCE
+                </motion.div>
             </div>
             <div className="menu-items">
 
                 {menuData.map((menu, index) => (
-                    <div className="item" key={index}>
+                    <motion.div variants={lists} initial="hidden" animate="visible" transition={{ duration: 0.3, delay: index * 0.09 }} className="item" key={index}>
                         <div className="item-name" onMouseEnter={playClick} onMouseLeave={stopClick} onClick={() => {
-                            navigate(`${menu.path}`, { replace: true }
-                        )}}>
+                            navigate(`${menu.path}`)
+                        }}>
                             {menu.name}
                         </div>
-                    </div>
+                    </motion.div>
 
                 ))}
 
@@ -85,7 +94,7 @@ const Menu = () => {
             <audio preload="auto" id="click-audio">
                 <source src={click_basic}></source>
             </audio>
-          
+
         </Container>
     )
 }

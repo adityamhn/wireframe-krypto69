@@ -12,6 +12,8 @@ import SpecPost from './pages/Posts/SpecPost';
 import Stocks from './pages/Stocks/Stocks';
 import StockReport from './pages/Stocks/StockReport';
 import Institutions from './pages/Institutions/Institutions';
+import InstitutionDetails from './pages/Institutions/InstitutionDetails';
+import UserDetails from './pages/Users/UserDetails';
 
 function App() {
 
@@ -24,7 +26,9 @@ function App() {
     { path: '/companies', element: <Stocks /> },
     { path: '/govt-institutions', element: <Institutions /> },
     { path: '/posts/:postid', element: <SpecPost /> },
+    { path: '/users/:userid', element: <UserDetails /> },
     { path: '/companies/:stockid', element: <StockReport /> },
+    { path: '/govt-institutions/:instid', element: <InstitutionDetails /> },
     
 
   ]

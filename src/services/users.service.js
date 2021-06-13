@@ -8,6 +8,11 @@ export const GetAllUsers = async()=>{
     return res.data
 }
 
+export const GetUserDetails = async(userid)=>{
+    const res = await axios.get(mainURL + `/social-media/user/${userid}?apikey=${key}`)
+    return res.data
+}
+
 export const GetAllPosts = async()=>{
     const res = await axios.get(mainURL + `/social-media/posts?apikey=${key}`)
     return res.data
@@ -25,5 +30,15 @@ export const GetAllCompanies = async()=>{
 
 export const GetStockReport = async(stockid)=>{
     const res = await axios.get(mainURL + `/stock/${stockid}?apikey=${key}`)
+    return res.data
+}
+
+export const GetAllGovtInst = async()=>{
+    const res = await axios.get(mainURL + `/institutions?apikey=${key}`)
+    return res.data
+}
+
+export const GetInstDetails = async(instid)=>{
+    const res = await axios.get(mainURL + `/institution/${instid}?apikey=${key}`)
     return res.data
 }

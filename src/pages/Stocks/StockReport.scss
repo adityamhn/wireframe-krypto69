@@ -11,6 +11,10 @@
         align-items: center;
         padding: 0rem 2rem;
 
+        @media only screen and (max-width: 500px) {
+            padding: 0rem 0.5rem;
+        }
+
         .back-cont {
             .back {
                 color: #fff;
@@ -22,25 +26,42 @@
                     text-decoration: line-through;
                 }
             }
-
         }
-
-  
     }
 
     .wrapper {
         .heading {
             padding: 0rem 2rem;
+
+            @media only screen and (max-width: 500px) {
+                padding: 1rem 0.5rem;
+            }
             .title {
-                font-family: 'Shapiro-55-ext';
+                font-family: "Shapiro-55-ext";
                 font-size: 3rem;
                 color: #fdf800;
+
+                @media only screen and (max-width: 800px) {
+                    font-size: 3rem;
+                }
+
+                @media only screen and (max-width: 600px) {
+                    font-size: 2.5rem;
+                }
+
+                @media only screen and (max-width: 400px) {
+                    font-size: 2rem;
+                }
             }
         }
 
         .info {
-            font-family: 'Shapiro-45-wide';
+            font-family: "Shapiro-45-wide";
             padding: 1rem 2rem;
+
+            @media only screen and (max-width: 500px) {
+                padding: 1rem 0.5rem;
+            }
             .top {
                 display: flex;
                 flex-direction: row;
@@ -49,6 +70,10 @@
                 border: 1px solid #fff;
                 padding: 1rem 1rem;
 
+                @media only screen and (max-width: 1050px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
 
                 .sym {
                     color: #fff;
@@ -58,16 +83,27 @@
                 .name {
                     color: #d8d8d8;
                     font-size: 1.2rem;
-                    font-family: 'Shapiro-35';
+                    font-family: "Shapiro-35";
+                    @media only screen and (max-width: 1050px) {
+                        padding-bottom: 2rem;
+                    }
                 }
 
                 .main {
                     display: flex;
                     flex-direction: row;
 
+                    @media only screen and (max-width: 800px) {
+                        flex-wrap: wrap;
+                    }
+
                     .topic {
                         text-align: center;
                         margin: 0rem 1.2rem;
+
+                        @media only screen and (max-width: 800px) {
+                            padding-bottom: 1rem;
+                        }
                         .det {
                             color: #fff;
                         }
@@ -83,11 +119,19 @@
                 display: flex;
                 margin-top: 1rem;
 
+                @media only screen and (max-width: 1050px) {
+                    flex-direction: column;
+                }
+
                 .left {
                     border: 1px solid #fff;
                     padding: 1rem;
                     margin-right: 0.3rem;
                     width: 50%;
+
+                    @media only screen and (max-width: 1050px) {
+                        width: 100%;
+                    }
 
                     .title {
                         font-size: 2rem;
@@ -98,12 +142,17 @@
                         font-size: 0.9rem;
                         color: #d8d8d8;
 
-                        .det {
+                        @media only screen and (max-width: 400px) {
+                            font-size: 0.7rem;
+                        }
 
+                        .det {
                             color: #fff;
                             font-size: 1rem;
 
-
+                            @media only screen and (max-width: 400px) {
+                                font-size: 0.8rem;
+                            }
                         }
                     }
 
@@ -120,6 +169,12 @@
                     margin-left: 0.3rem;
                     width: 50%;
 
+                    @media only screen and (max-width: 1050px) {
+                        width: 100%;
+                        margin-top: 1rem;
+                        margin-left: 0rem;
+                    }
+
                     .title {
                         font-size: 2rem;
                         color: #fdf800;
@@ -129,8 +184,28 @@
                         display: flex;
                         justify-content: space-between;
                         margin: 1.5rem 0rem;
+
+                        @media only screen and (max-width: 1050px) {
+                            justify-content: space-evenly;
+                        }
+
+                        @media only screen and (max-width: 420px) {
+                            flex-direction: column;
+                        }
                         .group {
                             margin: 0rem 0.4rem;
+
+                            @media only screen and (max-width: 420px) {
+                                padding: 0.7rem 0rem;
+                            }
+
+                            @media only screen and (max-width: 1050px) {
+                                margin: 0rem 1.3rem;
+                            }
+
+                            @media only screen and (max-width: 420px) {
+                                margin: 0rem 0.5rem;
+                            }
 
                             .head {
                                 color: #fff;
@@ -141,11 +216,11 @@
                                 display: flex;
                                 justify-content: space-between;
                                 font-size: 0.8rem;
-                                font-family: 'Shapiro-35';
+                                font-family: "Shapiro-35";
 
                                 .lab {
                                     color: #d8d8d8;
-                                    padding-right:1.5rem;
+                                    padding-right: 1.5rem;
                                 }
 
                                 .det {
@@ -160,6 +235,10 @@
                         display: flex;
                         justify-content: space-between;
                         margin: 1.5rem 0rem;
+
+                        @media only screen and (max-width: 1050px) {
+                            justify-content: space-evenly;
+                        }
                         .group {
                             margin: 0rem 0.4rem;
 
@@ -172,11 +251,11 @@
                                 display: flex;
                                 justify-content: space-between;
                                 font-size: 0.8rem;
-                                font-family: 'Shapiro-35';
+                                font-family: "Shapiro-35";
 
                                 .lab {
                                     color: #d8d8d8;
-                                    padding-right:1.5rem;
+                                    padding-right: 1.5rem;
                                 }
 
                                 .det {

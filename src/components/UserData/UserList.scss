@@ -1,30 +1,27 @@
 .user-list-cont {
     display: flex;
     width: 100%;
-    
 
     .users-body {
         width: 55%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 2rem;
-        padding:0rem 1rem 0rem 1rem;
-        // border-left: 1px solid #fff;
-        overflow-y:scroll;
-        height: calc(100vh - 80px - 3rem);
+        margin-top: 1rem;
+        overflow-y: scroll;
+        height: calc(100vh - 80px - 6.4rem);
 
         @media only screen and (max-width: 980px) {
             width: 100%;
-         }
+        }
 
-         @media only screen and (max-width: 485px) {
+        @media only screen and (max-width: 485px) {
             padding: 0;
-         }
+        }
 
         &::-webkit-scrollbar-track {
             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-            background-color:transparent ;
+            background-color: transparent;
         }
         &::-webkit-scrollbar {
             width: 6px;
@@ -33,23 +30,25 @@
         &::-webkit-scrollbar-thumb {
             background-color: #555;
         }
-  
-
 
         .social-users-card {
             background-color: rgba(196, 196, 196, 0.1);
             border-radius: 20px;
             margin: 0.5rem 0rem;
             width: 50vw;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
 
             @media only screen and (max-width: 980px) {
                 width: 80vw;
-             }
+            }
 
-             @media only screen and (max-width: 612px) {
+            @media only screen and (max-width: 612px) {
                 width: 90vw;
-             }
-            
+            }
 
             .user-card-body {
                 display: flex;
@@ -66,20 +65,22 @@
                         @media only screen and (max-width: 542px) {
                             width: 4.5rem;
                             height: 4.5rem;
-                         }
+                        }
                     }
                 }
 
                 .user-info {
                     padding: 0rem 2rem;
+                    overflow-wrap: break-word;
                     .text {
                         color: #fff;
                         font-family: "Shapiro-45-ext";
                         font-size: 0.9rem;
+                        overflow-wrap: break-word;
 
                         @media only screen and (max-width: 542px) {
                             font-size: 0.7rem;
-                         }
+                        }
                     }
                 }
             }
@@ -95,12 +96,11 @@
 
         @media only screen and (max-width: 980px) {
             display: none;
-         }
+        }
         .hover-cap {
-            
             .hover {
                 color: #fff;
-                font-family: 'Shapiro-45-ext';
+                font-family: "Shapiro-45-ext";
             }
         }
     }
@@ -110,15 +110,14 @@
 
         @media only screen and (max-width: 980px) {
             display: none;
-         }
+        }
 
-        padding:1.5rem 1.5rem;
-        font-family: 'Shapiro-45-ext';
+        padding: 0rem 1.5rem;
+        font-family: "Shapiro-45-ext";
         line-height: 180%;
 
-
         .title {
-            font-family: 'Shapiro-55-ext';
+            font-family: "Shapiro-55-ext";
             color: #fdf800;
             font-size: 2rem;
         }

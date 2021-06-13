@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import teleport from '../audio/teleport.wav'
-import swoosh from '../audio/swoosh.wav'
 
 
 export default function PageTransition() {
