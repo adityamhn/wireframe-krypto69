@@ -1,11 +1,11 @@
 export const menuData = [
     {
         name: 'COMPANY STOCKS',
-        path: '/'
+        path: '/companies'
     },
     {
         name: 'GOVERNMENT INSTITUTIONS',
-        path: '/'
+        path: '/govt-institutions'
     },
     {
         name: 'SOCIAL MEDIA USERS',
@@ -13,6 +13,6 @@ export const menuData = [
     },
     {
         name: 'SOCIAL MEDIA POSTS',
-        path: '/'
+        path: '/posts'
     },
 ]

@@ -1,0 +1,49 @@
+.social-posts-cont {
+    background-color: #141414;
+    min-height: 100vh;
+    padding: 0;
+
+
+    .posts-header {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 2rem;
+
+        .back-cont {
+            .back {
+                color: #fff;
+                text-decoration: underline;
+                font-family: "Shapiro-55-ext";
+                transition: all 1s ease;
+
+                &:hover {
+                    text-decoration: line-through;
+                }
+            }
+
+        }
+
+        
+        .search-cont {
+            .search-field {
+                height: 2rem;
+                border: none;
+                font-family: 'Shapiro-45-ext';
+                width: 25rem;
+                border-radius: 6px;
+
+                @media only screen and (max-width: 600px) {
+                    width: 16rem;
+                 }
+
+                 @media only screen and (max-width: 421px) {
+                    width: 10rem;
+                 }
+            }
+        }
+    }
+
+}

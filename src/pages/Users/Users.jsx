@@ -8,8 +8,7 @@ import UserList from '../../components/UserData/UserList';
 import Loader from '../../components/Loader';
 import click_basic from '../../audio/click_basic.wav'
 
-
-export const Users = () => {
+const Users = () => {
     const navigate = useNavigate()
     const [users, setUsers] = useState([])
     const [searchfield, setSearchfield] = useState("");
@@ -82,3 +81,7 @@ export const Users = () => {
         </Container>
     )
 }
+
+
+
+export default Users

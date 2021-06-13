@@ -1,0 +1,97 @@
+.posts-list-cont {
+    display: flex;
+    justify-content: center;
+    
+
+    .posts-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        border-left: 1px solid #fff;
+        overflow-y:scroll;
+        overflow-x: hidden;
+        height: calc(100vh - 80px - 3rem);
+
+        @media only screen and (max-width: 980px) {
+            width: 100%;
+         }
+
+         @media only screen and (max-width: 485px) {
+            padding: 0;
+         }
+
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color:transparent ;
+        }
+        &::-webkit-scrollbar {
+            width: 6px;
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #555;
+        }
+  
+
+
+        .social-post-card {
+            background-color: rgba(196, 196, 196, 0.1);
+            border-radius: 20px;
+            margin: 0.5rem 0rem;
+            width: 70vw;
+            z-index: 20;
+            margin: 0.7rem 2rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                
+            }
+
+            @media only screen and (max-width: 980px) {
+                width: 80vw;
+             }
+
+             @media only screen and (max-width: 612px) {
+                width: 90vw;
+             }
+            
+
+            .post-card-body {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 1rem 1rem;
+                .post-img {
+                    .image {
+                        background-color: #fff;
+                        width: 18rem;
+                        height: 18rem;
+                        object-fit: cover;
+                        border-radius: 20px;
+
+                        @media only screen and (max-width: 542px) {
+                            width: 4.5rem;
+                            height: 4.5rem;
+                         }
+                    }
+                }
+
+                .post-info {
+                    padding: 0rem 2.5rem;
+                    line-height: 230%;
+                    .text {
+                        color: #fff;
+                        font-family: "Shapiro-45-ext";
+                        font-size: 1rem;
+
+                        @media only screen and (max-width: 542px) {
+                            font-size: 0.7rem;
+                         }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+.stock-report-cont {
+    background-color: #141414;
+    min-height: 100vh;
+    padding: 0;
+
+    .posts-header {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 2rem;
+
+        .back-cont {
+            .back {
+                color: #fff;
+                text-decoration: underline;
+                font-family: "Shapiro-55-ext";
+                transition: all 1s ease;
+
+                &:hover {
+                    text-decoration: line-through;
+                }
+            }
+
+        }
+
+  
+    }
+
+    .wrapper {
+        .heading {
+            padding: 0rem 2rem;
+            .title {
+                font-family: 'Shapiro-55-ext';
+                font-size: 3rem;
+                color: #fdf800;
+            }
+        }
+
+        .info {
+            font-family: 'Shapiro-45-wide';
+            padding: 1rem 2rem;
+            .top {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                border: 1px solid #fff;
+                padding: 1rem 1rem;
+
+
+                .sym {
+                    color: #fff;
+                    font-size: 2rem;
+                }
+
+                .name {
+                    color: #d8d8d8;
+                    font-size: 1.2rem;
+                    font-family: 'Shapiro-35';
+                }
+
+                .main {
+                    display: flex;
+                    flex-direction: row;
+
+                    .topic {
+                        text-align: center;
+                        margin: 0rem 1.2rem;
+                        .det {
+                            color: #fff;
+                        }
+                        .lab {
+                            color: #d8d8d8;
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+
+            .second {
+                display: flex;
+                margin-top: 1rem;
+
+                .left {
+                    border: 1px solid #fff;
+                    padding: 1rem;
+                    margin-right: 0.3rem;
+                    width: 50%;
+
+                    .title {
+                        font-size: 2rem;
+                        color: #fdf800;
+                    }
+
+                    .sector {
+                        font-size: 0.9rem;
+                        color: #d8d8d8;
+
+                        .det {
+
+                            color: #fff;
+                            font-size: 1rem;
+
+
+                        }
+                    }
+
+                    .desc {
+                        color: #fff;
+                        padding: 1.1rem 0rem;
+                        font-size: 0.9rem;
+                    }
+                }
+
+                .right {
+                    border: 1px solid #fff;
+                    padding: 1rem;
+                    margin-left: 0.3rem;
+                    width: 50%;
+
+                    .title {
+                        font-size: 2rem;
+                        color: #fdf800;
+                    }
+
+                    .fin-info-1 {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 1.5rem 0rem;
+                        .group {
+                            margin: 0rem 0.4rem;
+
+                            .head {
+                                color: #fff;
+                                padding: 0.3rem 0rem;
+                            }
+
+                            .grp-info {
+                                display: flex;
+                                justify-content: space-between;
+                                font-size: 0.8rem;
+                                font-family: 'Shapiro-35';
+
+                                .lab {
+                                    color: #d8d8d8;
+                                    padding-right:1.5rem;
+                                }
+
+                                .det {
+                                    color: #fff;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+
+                    .fin-info-2 {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 1.5rem 0rem;
+                        .group {
+                            margin: 0rem 0.4rem;
+
+                            .head {
+                                color: #fff;
+                                padding: 0.3rem 0rem;
+                            }
+
+                            .grp-info {
+                                display: flex;
+                                justify-content: space-between;
+                                font-size: 0.8rem;
+                                font-family: 'Shapiro-35';
+
+                                .lab {
+                                    color: #d8d8d8;
+                                    padding-right:1.5rem;
+                                }
+
+                                .det {
+                                    color: #fff;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
