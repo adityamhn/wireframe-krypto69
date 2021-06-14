@@ -27,14 +27,7 @@ const Menu = () => {
     }
 
 
-    const text = {
-        hidden: {
-            x: -50
-        },
-        transition: {
-            staggerChildren: 0.1,
-        }
-    }
+
 
 
 

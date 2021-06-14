@@ -56,7 +56,7 @@ const SpecPost = () => {
             </div>
             <div className='wrapper'>
                 <div className="heading">
-                    <h3 className="title">SOCIAL MEDIA POSTS</h3>
+                    <h3 className="title">SOCIAL MEDIA POST</h3>
                 </div>
 
                 <div className="body">

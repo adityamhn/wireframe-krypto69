@@ -19,7 +19,7 @@ const Home = () => {
             clearInterval(timer)
         }
 
-    });
+    },[date]);
 
 
     const letter = {
@@ -75,7 +75,7 @@ const Home = () => {
             </div>
             <div className="wrapper">
                 <div className="gallery-sec">
-                    <motion.div   onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-1">
+                    <motion.div onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-1">
 
                         <div className="gallery-img-cont">
 
@@ -92,7 +92,7 @@ const Home = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div   onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-2">
+                    <motion.div onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-2">
                         <div className="gallery-img-cont">
                             <motion.div variants={image} initial="hidden" animate="visible" transition={{ duration: 0.7 }} className="gallery-img-sec">
                                 <div className="gallery1-img" />
@@ -107,7 +107,7 @@ const Home = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div   onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-3">
+                    <motion.div onMouseEnter={playClick} onMouseLeave={stopClick} className="gallery gallery-3">
                         <div className="gallery-img-cont">
                             <motion.div variants={image} initial="hidden" animate="visible" transition={{ duration: 0.7 }} className="gallery-img-sec">
                                 <div className="gallery1-img" />

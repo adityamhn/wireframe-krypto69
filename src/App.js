@@ -1,7 +1,7 @@
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { useRoutes } from 'react-router-dom';
+import {  useRoutes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import ExtraCursor from './components/ExtraCursor/ExtraCursor'
 import Users from './pages/Users/Users';
@@ -14,6 +14,7 @@ import StockReport from './pages/Stocks/StockReport';
 import Institutions from './pages/Institutions/Institutions';
 import InstitutionDetails from './pages/Institutions/InstitutionDetails';
 import UserDetails from './pages/Users/UserDetails';
+import { motion } from "framer-motion"
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
     { path: '/users/:userid', element: <UserDetails /> },
     { path: '/companies/:stockid', element: <StockReport /> },
     { path: '/govt-institutions/:instid', element: <InstitutionDetails /> },
-    
+
 
   ]
 
@@ -38,9 +39,11 @@ function App() {
 
   return (
     <>
-    <ExtraCursor />
-    <PageTransition />
+      <ExtraCursor />
+      <PageTransition />
+  
       {homeRouting}
+
     </>
   );
 }

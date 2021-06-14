@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Row, Col, Table, FormControl } from 'react-bootstrap';
+import { Container,OverlayTrigger,Tooltip, Table, FormControl } from 'react-bootstrap';
 import { useNavigate } from 'react-router';
 import Loader from '../../components/Loader';
 import './Stocks.scss'
@@ -96,7 +96,11 @@ const Stocks = () => {
                         {filteredStocks.map((stock, index) => {
                             return (
                                 <tr className="table-tr " key={index} >
-                                    <td className="d-flex"><div onMouseEnter={playClick} onMouseLeave={stopClick} className="d-flex flex-column" onClick={() => navigate(`/companies/${stock._id}`)} ><span className="symbol">{stock.Symbol}</span><span className="name">{stock.Name}</span></div></td>
+                                <td className="d-flex">
+                               
+                                    <div onMouseEnter={playClick} onMouseLeave={stopClick} className="d-flex flex-column" onClick={() => navigate(`/companies/${stock._id}`)} ><span className="symbol">{stock.Symbol}</span><span className="name">{stock.Name}</span></div>
+
+                                </td>
                                     <td><div className="d-flex justify-content-center">{(Number(stock.MarketCapitalization) / 1000000000).toFixed(2)}B</div></td>
                                     <td><div className="d-flex justify-content-center">{Number(stock.PERatio).toFixed(2)}</div></td>
                                     <td><div className="d-flex justify-content-center">{(Number(stock.FullTimeEmployees) / 1000).toFixed(2)}K</div></td>
